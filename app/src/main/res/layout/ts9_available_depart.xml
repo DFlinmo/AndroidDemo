@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ts9.Ts9_AvailableDepart">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="可预约挂号科室"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dpttype"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="科室类型"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/idtitle"
+        app:layout_constraintStart_toEndOf="@+id/idtitle"
+        app:layout_constraintTop_toTopOf="@+id/idtitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/idtitle"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="科室id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <TextView
+        android:id="@+id/nametitle"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="科室名称"
+        app:layout_constraintStart_toEndOf="@+id/dpttype"
+        app:layout_constraintTop_toTopOf="@+id/idtitle" />
+
+    <TextView
+        android:id="@+id/costtitle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="价格"
+        app:layout_constraintStart_toEndOf="@+id/nametitle"
+        app:layout_constraintTop_toTopOf="@+id/nametitle" />
+
+    <ListView
+        android:id="@+id/avadpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

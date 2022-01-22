@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/division_name"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="部门名称"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/division_tel"
+        android:layout_width="122dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="部门联系方式"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        app:srcCompat="@mipmap/call" />
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="反馈"
+        android:textSize="18sp" />
+</LinearLayout>

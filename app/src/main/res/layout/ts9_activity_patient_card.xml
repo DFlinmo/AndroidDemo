@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ts9.Ts9_PatientCard">
+
+    <TextView
+        android:id="@+id/pttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:text="就诊人卡片信息(自动生成)"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ptinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ptname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/textview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/ptsex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/ptname"
+            app:layout_constraintTop_toBottomOf="@+id/ptname" />
+
+        <TextView
+            android:id="@+id/ptbirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/ptsex"
+            app:layout_constraintTop_toBottomOf="@+id/ptsex" />
+
+        <TextView
+            android:id="@+id/pttel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/ptbirthday"
+            app:layout_constraintTop_toBottomOf="@+id/ptbirthday" />
+
+        <TextView
+            android:id="@+id/ptiacard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/pttel"
+            app:layout_constraintTop_toBottomOf="@+id/pttel" />
+
+        <TextView
+            android:id="@+id/ptadr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/ptiacard"
+            app:layout_constraintTop_toBottomOf="@+id/ptiacard" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="           "
+            app:layout_constraintStart_toStartOf="@+id/ptadr"
+            app:layout_constraintTop_toBottomOf="@+id/ptadr" />
+
+        <TextView
+            android:id="@+id/todepartment"
+            android:layout_width="68dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text=">>"
+            android:textColor="#F7EAEA"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ptadr"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/etinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptinfo">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button2_circle_shape"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="* 姓           名:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="* 性           别:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="* 出 生 日 期:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/sex"
+            app:layout_constraintTop_toBottomOf="@+id/sex" />
+
+        <TextView
+            android:id="@+id/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="* 联 系 方 式:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/birthday"
+            app:layout_constraintTop_toBottomOf="@+id/birthday" />
+
+        <TextView
+            android:id="@+id/idcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="*身份证号码:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tel"
+            app:layout_constraintTop_toBottomOf="@+id/tel" />
+
+        <TextView
+            android:id="@+id/adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="* 通 讯 地 址:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/idcard"
+            app:layout_constraintTop_toBottomOf="@+id/idcard" />
+
+
+        <TextView
+            android:id="@+id/etname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/name"
+            app:layout_constraintTop_toTopOf="@+id/name"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/etsex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/etname"
+            app:layout_constraintTop_toTopOf="@+id/sex" />
+
+        <TextView
+            android:id="@+id/etbirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/etsex"
+            app:layout_constraintTop_toTopOf="@+id/birthday" />
+
+        <TextView
+            android:id="@+id/ettel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/etbirthday"
+            app:layout_constraintTop_toTopOf="@+id/tel" />
+
+        <TextView
+            android:id="@+id/etiacard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/ettel"
+            app:layout_constraintTop_toTopOf="@+id/idcard" />
+
+        <TextView
+            android:id="@+id/etadr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/etiacard"
+            app:layout_constraintTop_toTopOf="@+id/adress" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="210dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="20dp"
+            android:text="        "
+            app:layout_constraintStart_toStartOf="@+id/etadr"
+            app:layout_constraintTop_toBottomOf="@+id/etadr" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/pttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="新增就诊人卡片信息"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ptinfo"
+        tools:ignore="DuplicateIds" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/deptname"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="可预约时间"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/depttime"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:text="可预约科室名称"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/deptname"
+        app:layout_constraintTop_toTopOf="@+id/deptname" />
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="预约"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/depttime"
+        app:layout_constraintTop_toTopOf="@+id/depttime" />
+
+    <ListView
+        android:id="@+id/cregistlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@+id/deptname"
+        app:layout_constraintTop_toBottomOf="@+id/deptname" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ts9.Ts9_Hospitalinfo">
+
+    <ImageView
+        android:id="@+id/hspimg"
+        android:layout_width="268dp"
+        android:layout_height="242dp"
+        android:background="@drawable/boder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hspinfo"
+        app:srcCompat="@mipmap/hslogo" />
+
+    <TextView
+        android:id="@+id/hspinfo"
+        android:layout_width="421dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_shape"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bookpatient"
+        android:layout_width="141dp"
+        android:layout_height="245dp"
+        android:background="@drawable/boder"
+        android:text="+                预约挂号"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/hspimg"
+        app:layout_constraintTop_toBottomOf="@+id/hspinfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

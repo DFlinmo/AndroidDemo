@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ts10.Ts10_DeliveryActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="172dp">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="36dp"
+            android:layout_height="173dp"
+            android:gravity="center"
+            android:text="快\n\n递\n\n点"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#AD2323"
+            app:layout_constraintStart_toStartOf="@+id/delivery_adress"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dilivery_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="社区快件服务中心"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="120dp"
+            android:layout_height="1dp"
+            android:background="#CF2020"
+            app:layout_constraintStart_toStartOf="@+id/dilivery_name"
+            app:layout_constraintTop_toBottomOf="@+id/dilivery_name" />
+
+        <TextView
+            android:id="@+id/delivery_adress"
+            android:layout_width="255dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="20dp"
+            android:text="地址：\n 广西壮族自治区南宁市西乡塘区北湖街道北湖村王屋一队77号快递之家"
+            app:layout_constraintStart_toStartOf="@+id/dilivery_name"
+            app:layout_constraintTop_toBottomOf="@+id/dilivery_name" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="255dp"
+            android:layout_height="1dp"
+            android:background="#B61B1B"
+            app:layout_constraintStart_toStartOf="@+id/delivery_adress"
+            app:layout_constraintTop_toBottomOf="@+id/delivery_adress" />
+
+        <TextView
+            android:id="@+id/delivery_tel"
+            android:layout_width="244dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:text="电话\t：\t12345678909"
+            app:layout_constraintStart_toStartOf="@+id/delivery_adress"
+            app:layout_constraintTop_toBottomOf="@+id/delivery_adress" />
+
+        <ImageView
+            android:id="@+id/delivery_img"
+            android:layout_width="104dp"
+            android:layout_height="74dp"
+            app:layout_constraintStart_toEndOf="@+id/delivery_adress"
+            app:layout_constraintTop_toTopOf="@+id/delivery_adress"
+            app:srcCompat="@mipmap/delivery_img" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="255dp"
+            android:layout_height="1dp"
+            android:background="#C21D1D"
+            app:layout_constraintStart_toStartOf="@+id/delivery_tel"
+            app:layout_constraintTop_toBottomOf="@+id/delivery_tel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EE1111" />
+
+    <ListView
+        android:id="@+id/delivery_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
