@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+    android:layout_width="100dp"
+    android:padding="15dp"
+    android:layout_margin="10px"
+    android:layout_marginLeft="20dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#A7BAD6"
+        >
+
+
+        <TextView
+            android:id="@+id/date"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="时间"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/date"
+            android:id="@+id/temperature"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="温度" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/temperature"
+            android:id="@+id/weather"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="天气" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

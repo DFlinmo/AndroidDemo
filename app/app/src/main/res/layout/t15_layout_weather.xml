@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout1"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="" />
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/city"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_margin="3dp"-->
+                <!--                    android:text="北京" />-->
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout2"
+                android:layout_width="198dp"
+                android:layout_height="87dp"
+                android:layout_below="@+id/linear_layout1"
+                android:layout_alignLeft="@+id/linear_layout1"
+
+
+                android:layout_marginTop="30dp"
+                android:background="#84B0FF"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="穿衣指数"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:id="@+id/dress_prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="建议穿长袖衬衫、单裤等服装" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout3"
+                android:layout_width="196dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="5dp"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/linear_layout1"
+                android:background="#84B0FF"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ultraviolet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="紫外线指数"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:id="@+id/ultraviolet_prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="辐射较弱，涂擦SPF12~15、PA+护肤品" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout4"
+                android:layout_width="199dp"
+                android:layout_height="81dp"
+                android:layout_below="@+id/linear_layout2"
+                android:layout_alignLeft="@+id/linear_layout1"
+                android:layout_marginTop="5dp"
+                android:background="#84B0FF"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="感冒指数"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:id="@+id/cold_prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="建议穿长袖衬衫、单裤等服装" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout5"
+                android:layout_width="196dp"
+                android:layout_height="81dp"
+                android:layout_below="@+id/linear_layout3"
+                android:layout_alignLeft="@+id/linear_layout3"
+                android:layout_alignTop="@+id/linear_layout2"
+
+                android:layout_toRightOf="@+id/linear_layout1"
+                android:background="#84B0FF"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/motion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="运动指数"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:id="@+id/motion_prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="气候适宜，推荐您进行户外运动" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_layout6"
+                android:layout_width="196dp"
+                android:layout_height="77dp"
+                android:layout_below="@+id/linear_layout5"
+                android:layout_alignLeft="@+id/linear_layout3"
+                android:layout_alignTop="@+id/linear_layout4"
+                android:layout_toRightOf="@+id/linear_layout1"
+                android:background="#84B0FF"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/air_pollution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="空气污染扩散指数"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:id="@+id/air_pollution_prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="空气质量非常好，非常适合户外活动，趁机出去多呼吸" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/refresh_weather"
+                android:layout_width="44dp"
+                android:layout_height="19dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="7dp"
+                app:srcCompat="@drawable/t15_refresh_weather" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:text="未来4天天气"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

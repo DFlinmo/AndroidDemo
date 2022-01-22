@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="546dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="最高学历" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView13"
+                    android:layout_alignStart="@+id/textView13"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="50dp"
+                    android:text="居住地址" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView15"
+                    android:layout_alignStart="@+id/textView15"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="57dp"
+                    android:text="期望职位"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView16"
+                    android:layout_alignStart="@+id/textView16"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="54dp"
+                    android:text="薪资" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView20"
+                    android:layout_alignStart="@+id/textView20"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="59dp"
+                    android:text="教育经历" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView18"
+                    android:layout_alignStart="@+id/textView18"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="50dp"
+                    android:text="自我描述" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView19"
+                    android:layout_alignStart="@+id/textView19"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="52dp"
+                    android:text="工作经历" />
+
+                <EditText
+                    android:id="@+id/most_education"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp" />
+
+                <EditText
+                    android:id="@+id/position_name"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/address"
+                    android:layout_alignEnd="@+id/address"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/most_education"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp" />
+
+                <EditText
+                    android:id="@+id/education"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/individual_resume"
+                    android:layout_alignEnd="@+id/individual_resume"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/individual_resume"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/money1"
+                    android:layout_alignEnd="@+id/money1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/money1"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/position_name"
+                    android:layout_alignEnd="@+id/position_name"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="0dp" />
+
+                <EditText
+                    android:id="@+id/experience"
+                    android:layout_width="258dp"
+                    android:layout_height="57dp"
+                    android:layout_below="@+id/education"
+                    android:layout_alignEnd="@+id/education"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="0dp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

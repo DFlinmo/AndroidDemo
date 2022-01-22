@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7EDBF"
+    tools:context="com.sfsq.demo17.T17ui.notifications.NotificationsFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="384dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.408"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="138dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginBottom="53dp"
+                    android:text="昵称" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="22dp"
+                    android:text="性别" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="71dp"
+                    android:layout_height="62dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/t17_avatar" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="57dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="57dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/username"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="22dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView10"
+                    android:layout_alignTop="@+id/username"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="电话" />
+
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_width="160dp"
+                    android:layout_height="19dp"
+                    android:layout_alignStart="@+id/account"
+                    android:layout_alignTop="@+id/textView6"
+                    android:layout_alignEnd="@+id/account"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView6"
+                    android:layout_alignTop="@+id/sex"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="邮箱" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="168dp"
+                    android:layout_marginTop="28dp"
+                    android:text="账号"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/account"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView10"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="14dp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tel"
+                    android:layout_alignEnd="@+id/tel"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="22dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="392dp"
+            android:layout_height="401dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="390dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="最高学历" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView13"
+                    android:layout_alignStart="@+id/textView13"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:text="居住地址" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView15"
+                    android:layout_alignStart="@+id/textView15"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:text="期望职位"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView16"
+                    android:layout_alignStart="@+id/textView16"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:text="薪资" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView20"
+                    android:layout_alignStart="@+id/textView20"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:text="教育经历" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView18"
+                    android:layout_alignStart="@+id/textView18"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:text="自我描述" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView19"
+                    android:layout_alignStart="@+id/textView19"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:text="工作经历" />
+
+                <TextView
+                    android:id="@+id/most_education"
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="203dp" />
+
+                <TextView
+                    android:id="@+id/position_name"
+                    android:layout_width="257dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address"
+                    android:layout_alignStart="@+id/address"
+                    android:layout_alignEnd="@+id/address"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="257dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/most_education"
+                    android:layout_alignStart="@+id/most_education"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp" />
+
+                <TextView
+                    android:id="@+id/education"
+                    android:layout_width="259dp"
+                    android:layout_height="41dp"
+                    android:layout_alignStart="@+id/individual_resume"
+                    android:layout_alignEnd="@+id/individual_resume"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="265dp"
+                    android:layout_marginEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/individual_resume"
+                    android:layout_width="252dp"
+                    android:layout_height="49dp"
+                    android:layout_below="@+id/money1"
+                    android:layout_alignStart="@+id/money1"
+                    android:layout_alignEnd="@+id/money1"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/money1"
+                    android:layout_width="244dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/position_name"
+                    android:layout_alignStart="@+id/position_name"
+                    android:layout_alignEnd="@+id/position_name"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/experience"
+                    android:layout_width="251dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/education"
+                    android:layout_alignStart="@+id/education"
+                    android:layout_alignEnd="@+id/education"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="0dp" />
+
+                <Button
+                    android:id="@+id/edit_resume"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="101dp"
+                    android:text="编辑" />
+
+                <Button
+                    android:id="@+id/add_resume"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@+id/edit_resume"
+                    android:layout_alignBottom="@+id/edit_resume"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="新增" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
