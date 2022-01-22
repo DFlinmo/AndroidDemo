@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/t13_dashboard_title"></include>
+
+    <Button
+        android:id="@+id/t13_add"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginBottom="52dp"
+        android:text="新增用户"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="580dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <LinearLayout
+            android:id="@+id/name_row_list"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dashboard_all"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="全部" />
+
+            <Button
+                android:id="@+id/dashboard_parent"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:text="父母" />
+
+            <Button
+                android:id="@+id/dashboard_landlord"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:text="房东" />
+
+            <Button
+                android:id="@+id/dashboard_friend"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_weight="1"
+                android:text="朋友" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/button_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="299dp"
+            android:layout_marginTop="50px">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:visibility="invisible"
+            android:layout_marginTop="150px"
+            android:id="@+id/dashboard_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新增分类" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

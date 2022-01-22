@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.deomo">
-
-    <!--    添加网络权限 允许访问网络图片-->
+    package="com.example.demo">
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.NewList">
+        android:theme="@style/Theme.Jiaofei">
         <activity
-            android:name="com.example.deomo.T1_MainActivity"
-            android:exported="true">
+            android:name="com.example.demo.ui.home.Electricity_Fees"
+            android:exported="true" />
+        <activity
+            android:name="com.example.demo.ui.dashboard.addUser.add_user"
+            android:exported="true" />
+        <activity
+            android:name="com.example.demo.t13_MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.deomo.t2.Page"/>
-        <activity android:name="com.example.deomo.t2.MoreActivity"/>
-        <activity android:name="com.example.deomo.t2.Subways"/>
-        <activity android:name="com.example.deomo.t2.Movie"/>
-        <activity android:name="com.example.deomo.t2.Waimai"/>
     </application>
 
 </manifest>
