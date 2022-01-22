@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ts19MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    tools:ignore="MissingConstraints"
+                    android:layout_height="50dp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="93dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dip"
+                        android:layout_gravity="bottom"
+                        android:background="#33000000"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dip"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:id="@+id/dot_0"
+                                android:layout_width="5dip"
+                                android:layout_height="5dip"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginRight="2dip"
+                                android:background="@drawable/dot_focused" />
+
+                            <View
+                                android:id="@+id/dot_1"
+                                android:layout_width="5dip"
+                                android:layout_height="5dip"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginRight="2dip"
+                                android:background="@drawable/dot_normal" />
+
+                            <View
+                                android:id="@+id/dot_2"
+                                android:layout_width="5dip"
+                                android:layout_height="5dip"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginRight="2dip"
+                                android:background="@drawable/dot_normal" />
+
+                            <View
+                                android:id="@+id/dot_3"
+                                android:layout_width="5dip"
+                                android:layout_height="5dip"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginRight="2dip"
+                                android:background="@drawable/dot_normal" />
+
+                            <View
+                                android:id="@+id/dot_4"
+                                android:layout_width="5dip"
+                                android:layout_height="5dip"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginRight="2dip"
+                                android:background="@drawable/dot_normal" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+                <EditText
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="请输入搜索内容"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="16dp">
+
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/Ershou"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="二手" />
+
+                    <Button
+                        android:id="@+id/Zufang"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="租房" />
+
+                    <Button
+                        android:id="@+id/Loupan"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="楼盘" />
+
+                    <Button
+                        android:id="@+id/Zhongjie"
+                        android:layout_width="75dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="中介" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/HouseList"
+                    android:layout_width="match_parent"
+                    android:layout_height="263dp">
+
+                </ListView>
+
+                <ListView
+                    android:id="@+id/AllHouseList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
